@@ -21,6 +21,8 @@ use Symfony\Component\HttpFoundation\Request;
  *
  * @property \kagami10074\LianLianPay\BankPay\BankPay $bankPay
  *
+ * @property \kagami10074\LianLianPay\RefundPay\RefundPay $refundPay
+ *
  * @package kagami10074\LianLianPay
  */
 class LianLianPay extends Container
@@ -28,6 +30,7 @@ class LianLianPay extends Container
     protected $providers = [
         Foundation\ServiceProviders\InstantPayProvider::class,
         Foundation\ServiceProviders\BankPayProvider::class,
+        Foundation\ServiceProviders\RefundPayProvider::class,
     ];
 
     public function __construct(array $config = array())
