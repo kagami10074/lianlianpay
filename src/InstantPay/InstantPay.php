@@ -172,7 +172,7 @@ class InstantPay extends AbstractAPI
         unset($params['sign']);
         $signRaw = $this->httpBuildKSortQuery($params);
 
-        $pubKey = $this->getConfig()->getInstantPayLianLianPublicKey();
+        $pubKey = $this->getConfig()->getLianLianPublicKey();
         $res = openssl_get_publickey($pubKey);
 
         // 调用openssl内置方法验签，返回bool值
@@ -210,7 +210,7 @@ class InstantPay extends AbstractAPI
         $params = $this->filterNull($params);
         $signRaw = $this->httpBuildKSortQuery($params);
         //转换为openssl密钥，必须是没有经过pkcs8转换的私钥
-        $res = openssl_get_privatekey($this->getConfig()->getInstantPayPrivateKey());
+        $res = openssl_get_privatekey($this->getConfig()->getPrivateKey());
         //调用openssl内置签名方法，生成签名$sign
         openssl_sign($signRaw, $signStr, $res, OPENSSL_ALGO_MD5);
         //释放资源
@@ -229,7 +229,7 @@ class InstantPay extends AbstractAPI
     {
         Log::debug('Build PayLoad Before:', $params);
         $oidPartner = $this->getConfig()->get('instant_pay.oid_partner');
-        $payLoad = LLHelper::encryptPayLoad(json_encode($params), $this->getConfig()->getInstantPayLianLianPublicKey());
+        $payLoad = LLHelper::encryptPayLoad(json_encode($params), $this->getConfig()->getLianLianPublicKey());
         return [
             'oid_partner' => $oidPartner,
             'pay_load' => $payLoad

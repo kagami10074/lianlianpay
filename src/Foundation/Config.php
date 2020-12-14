@@ -46,7 +46,10 @@ s;
         return file_get_contents(ROOT_PATH . "rsa_public_key.pem");
     }
 
-
+    public function getLianLianPublicKey()
+    {
+        return file_get_contents(ROOT_PATH . "llpay_public_key.pem");
+    }
 
 
 
