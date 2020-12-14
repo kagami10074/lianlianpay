@@ -34,4 +34,20 @@ s;
 -----END PUBLIC KEY-----
 s;
     }
+
+
+    public function getPrivateKey()
+    {
+        return file_get_contents(ROOT_PATH . "rsa_private_key.pem");
+    }
+
+    public function getPublicKey()
+    {
+        return file_get_contents(ROOT_PATH . "rsa_public_key.pem");
+    }
+
+
+
+
+
 }
