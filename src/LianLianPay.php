@@ -1,10 +1,10 @@
 <?php
 
-namespace Achais\LianLianPay;
+namespace Kagami10074\LianLianPay;
 
-use Achais\LianLianPay\Core\AbstractAPI;
-use Achais\LianLianPay\Core\Http;
-use Achais\LianLianPay\Support\Log;
+use Kagami10074\LianLianPay\Core\AbstractAPI;
+use Kagami10074\LianLianPay\Core\Http;
+use Kagami10074\LianLianPay\Support\Log;
 use Doctrine\Common\Cache\FilesystemCache;
 use Doctrine\Common\Cache\Cache as CacheInterface;
 use Monolog\Handler\HandlerInterface;
@@ -17,14 +17,17 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class Application
  *
- * @property \Achais\LianLianPay\InstantPay\InstantPay $instantPay
+ * @property \kagami10074\LianLianPay\InstantPay\InstantPay $instantPay
  *
- * @package Achais\LianLianPay
+ * @property \kagami10074\LianLianPay\BankPay\BankPay $bankPay
+ *
+ * @package kagami10074\LianLianPay
  */
 class LianLianPay extends Container
 {
     protected $providers = [
         Foundation\ServiceProviders\InstantPayProvider::class,
+        Foundation\ServiceProviders\BankPayProvider::class,
     ];
 
     public function __construct(array $config = array())

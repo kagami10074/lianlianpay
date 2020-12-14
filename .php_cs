@@ -1,8 +1,8 @@
 <?php
 $header = <<<EOF
-This file is part of the achais/lianlianpay.
+This file is part of the kagami10074/lianlianpay.
 
-(c) achais <>
+(c) kagami10074 <>
 
 This source file is subject to the MIT license that is bundled.
 EOF;

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Achais\LianLianPay\Core;
+namespace Kagami10074\LianLianPay\Core;
 
-use Achais\LianLianPay\Exceptions\HttpException;
-use Achais\LianLianPay\Support\Log;
+use Kagami10074\LianLianPay\Exceptions\HttpException;
+use Kagami10074\LianLianPay\Support\Log;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
 use Psr\Http\Message\ResponseInterface;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Achais\LianLianPay\Support;
+namespace Kagami10074\LianLianPay\Support;
 
 
 use ArrayAccess;

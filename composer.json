@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Achais\\LianLianPay\\": "src"
+            "Kagami10074\\LianLianPay\\": "src"
         }
     }
 }

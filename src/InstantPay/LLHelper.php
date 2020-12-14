@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Achais\LianLianPay\InstantPay;
+namespace Kagami10074\LianLianPay\InstantPay;
 
 
 class LLHelper

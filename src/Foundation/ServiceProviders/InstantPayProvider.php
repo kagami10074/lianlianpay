@@ -1,8 +1,8 @@
 <?php
 
-namespace Achais\LianLianPay\Foundation\ServiceProviders;
+namespace Kagami10074\LianLianPay\Foundation\ServiceProviders;
 
-use Achais\LianLianPay\InstantPay;
+use Kagami10074\LianLianPay\InstantPay;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 

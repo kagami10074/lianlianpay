@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Achais\LianLianPay\Exceptions;
+namespace Kagami10074\LianLianPay\Exceptions;
 
 /**
  * Class InvalidArgumentException
- * @package Achais\LianLianPay\Exceptions
+ * @package Kagami10074\LianLianPay\Exceptions
  */
 class InvalidArgumentException extends Exception
 {

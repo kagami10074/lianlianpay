@@ -1,12 +1,12 @@
 <?php
 
-namespace Achais\LianLianPay\Core;
+namespace Kagami10074\LianLianPay\Core;
 
-use Achais\LianLianPay\Exceptions\HttpException;
-use Achais\LianLianPay\Foundation\Config;
-use Achais\LianLianPay\Support\Arr;
-use Achais\LianLianPay\Support\Collection;
-use Achais\LianLianPay\Support\Log;
+use Kagami10074\LianLianPay\Exceptions\HttpException;
+use Kagami10074\LianLianPay\Foundation\Config;
+use Kagami10074\LianLianPay\Support\Arr;
+use Kagami10074\LianLianPay\Support\Collection;
+use Kagami10074\LianLianPay\Support\Log;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\RequestInterface;

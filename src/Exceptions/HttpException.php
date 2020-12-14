@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Achais\LianLianPay\Exceptions;
+namespace Kagami10074\LianLianPay\Exceptions;
 
 
 class HttpException extends Exception

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Achais\LianLianPay\Foundation;
+namespace Kagami10074\LianLianPay\Foundation;
 
 
-use Achais\LianLianPay\Support\Collection;
+use Kagami10074\LianLianPay\Support\Collection;
 
 class Config extends Collection
 {

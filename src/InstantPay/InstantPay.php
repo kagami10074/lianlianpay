@@ -1,13 +1,13 @@
 <?php
 
-namespace Achais\LianLianPay\InstantPay;
+namespace Kagami10074\LianLianPay\InstantPay;
 
-use Achais\LianLianPay\Core\AbstractAPI;
-use Achais\LianLianPay\Exceptions\HttpException;
-use Achais\LianLianPay\Exceptions\InvalidArgumentException;
-use Achais\LianLianPay\Support\Arr;
-use Achais\LianLianPay\Support\Collection;
-use Achais\LianLianPay\Support\Log;
+use Kagami10074\LianLianPay\Core\AbstractAPI;
+use Kagami10074\LianLianPay\Exceptions\HttpException;
+use Kagami10074\LianLianPay\Exceptions\InvalidArgumentException;
+use Kagami10074\LianLianPay\Support\Arr;
+use Kagami10074\LianLianPay\Support\Collection;
+use Kagami10074\LianLianPay\Support\Log;
 
 class InstantPay extends AbstractAPI
 {
