@@ -31,7 +31,7 @@ class RefundPay extends AbstractAPI
      */
     public function payment($no_refund, $dt_refund, $money_refund, $no_order, $dt_order)
     {
-        $url = $this->baseUrl() . '/refund.htm';
+        $url = $this->baseUrl . '/refund.htm';
         $params = [
             "oid_partner" => $this->config['refund_pay.oid_partner'],
             "sign_type" => self::SIGN_TYPE_RSA,
@@ -63,7 +63,7 @@ class RefundPay extends AbstractAPI
             throw new InvalidArgumentException('no_refund 和 dt_refund 不能都为空');
         }
 
-        $url = $this->getBaseUrl() . '/refundquery.htm';
+        $url = $this->baseUrl . '/refundquery.htm';
         $params = [
             "oid_partner" => $this->config['refund_pay.oid_partner'],
             "sign_type" => self::SIGN_TYPE_RSA,
@@ -140,18 +140,5 @@ class RefundPay extends AbstractAPI
         return $params;
     }
 
-    /**
-     * @param array $params
-     * @return array
-     */
-    private function buildPayLoadParams($params)
-    {
-        Log::debug('Build PayLoad Before:', $params);
-        $oidPartner = $this->getConfig()->get('instant_pay.oid_partner');
-        $payLoad = LLHelper::encryptPayLoad(json_encode($params), $this->getConfig()->getLianLianPublicKey());
-        return [
-            'oid_partner' => $oidPartner,
-            'pay_load' => $payLoad
-        ];
-    }
+
 }
