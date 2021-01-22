@@ -41,7 +41,7 @@ $config = [
         'notify_url' => 'http://localhost/', // 付款结果异步回调地址
         'url_return' => 'http://localhost/', // 付款完成后转向到此地址
         'production' => false, // 是否生产环境
-        'platform' => '', // 来源标识
+        'platform' => '', // 来源标识，写上自己的域名
     ],
     
     // 退款参数
