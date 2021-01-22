@@ -10,7 +10,7 @@ class RefundPayProvider implements ServiceProviderInterface
 {
     public function register(Container $pimple)
     {
-        $pimple['instantPay'] = function ($pimple) {
+        $pimple['refundPay'] = function ($pimple) {
             return new RefundPay\RefundPay($pimple['config']);
         };
     }
